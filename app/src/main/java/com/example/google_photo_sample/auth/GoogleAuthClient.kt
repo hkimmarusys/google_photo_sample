@@ -29,7 +29,6 @@ object GoogleAuthClient {
         val response = client.newCall(request).execute()
         val responseBody = response.body?.string()
 
-        Log.d("TokenResponse", responseBody ?: "No response")
 
         val json = JsonParser.parseString(responseBody).asJsonObject
         return json["access_token"].asString

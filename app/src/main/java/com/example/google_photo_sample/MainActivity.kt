@@ -2,7 +2,6 @@ package com.example.google_photo_sample
 
 import android.os.Bundle
 import android.util.Log
-import android.widget.TextView
 import androidx.activity.ComponentActivity
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.recyclerview.widget.GridLayoutManager
@@ -16,7 +15,6 @@ import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 import com.example.google_photo_sample.ui.TopBar
-import com.example.google_photo_sample.BuildConfig
 
 class MainActivity : ComponentActivity() {
 
@@ -74,7 +72,6 @@ class MainActivity : ComponentActivity() {
 
             topBar.setUserInfo(name, email)
 
-            Log.d("AuthCode", "authCode: $authCode")
 
             if (authCode != null) {
                 CoroutineScope(Dispatchers.IO).launch {

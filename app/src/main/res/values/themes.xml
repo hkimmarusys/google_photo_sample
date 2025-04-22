@@ -1,4 +1,3 @@
 <resources>
-
     <style name="Theme.Google_photo_sample" parent="Theme.AppCompat.DayNight.NoActionBar" />
 </resources>

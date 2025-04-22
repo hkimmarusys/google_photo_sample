@@ -1,5 +1,3 @@
-import org.gradle.process.internal.JvmOptions
-import org.jetbrains.kotlin.config.JvmTarget
 import java.util.Properties
 import java.io.FileInputStream
 
